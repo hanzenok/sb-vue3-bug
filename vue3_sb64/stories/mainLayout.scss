@@ -1,0 +1,37 @@
+.main-layout {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  & > * {
+    margin-bottom: 10px;
+  }
+  .block {
+    display: block;
+    width: 100%;
+  }
+}
+.row-layout {
+  display: flex;
+  & > * {
+    margin-right: 10px !important;
+  }
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-right: 10px !important;
+  }
+}
+.wrap-layout {
+  flex-wrap: wrap;
+}
+
+.modal-background {
+  background-color: grey !important;
+}

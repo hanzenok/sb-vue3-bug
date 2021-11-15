@@ -1,0 +1,36 @@
+.xe-switch {
+  font-family: "robotoregular";
+  -webkit-tap-highlight-color: transparent;
+
+  .el-switch__label.is-active {
+    color: var(--grey9-color);
+  }
+  .el-switch__core {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    &::before {
+      font-family: "robotoregular";
+      content: "OFF";
+      color: var(--grey0-color);
+      font-size: var(--small-font-size);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      line-height: 18px;
+      right: 6px;
+      text-align: right;
+    }
+  }
+  &.is-checked {
+    .el-switch__core {
+      background-color: var(--green-color);
+      border-color: var(--green-color);
+      &::before {
+        content: "ON";
+        color: var(--grey0-color);
+        left: 8px;
+        text-align: left;
+      }
+    }
+  }
+}

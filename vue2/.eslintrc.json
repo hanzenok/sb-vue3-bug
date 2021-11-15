@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "serviceworker": true
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["vue"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-debugger": 1,
+    "prefer-const": "error",
+    "no-console": "off",
+    "no-var": "error",
+    "curly": "error",
+    "linebreak-style": ["error", "unix"],
+    "eqeqeq": ["error", "smart"],
+    "yoda": ["error", "never"],
+    "vue/no-side-effects-in-computed-properties": "off",
+    "vue/max-attributes-per-line": "off",
+    "vue/html-self-closing": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/__tests__/*.{j,t}s"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

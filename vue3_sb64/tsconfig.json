@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "tsc",
+    "target": "ES2018",
+    "module": "esnext",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "jest"
+    ],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "index.ts",
+    "xe-components/**/*.ts",
+    "xe-components/**/*.vue",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "local_modules"
+  ]
+}
