@@ -24,7 +24,7 @@ Issue:  https://github.com/storybookjs/storybook/issues/13913
   Current behaviour
 
   - vue2: switch is disabled, switch stays ON
-  - vue3, vue3(sb6.4): switch is disabled, switch goes to OFF state (issue with re-rendering in Vue3: [issue 13913](https://github.com/storybookjs/storybook/issues/13913))
+  - vue3, vue3(sb6.4): switch is disabled, switch goes to OFF state (issue with re-rendering in Vue3 [issue 13913](https://github.com/storybookjs/storybook/issues/13913), check out your console)
 
   Expected behaviour
   
